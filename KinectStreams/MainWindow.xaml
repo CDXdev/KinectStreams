@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KinectStreams"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded" Unloaded="Window_Unloaded">
     <Grid>
-        
+        <Image Name="camera" />
+        <Canvas Name="canvas" />
+        <Grid>
+            <StackPanel>
+                <Button Content="Color" Click="Color_Click" />
+                <Button Content="Depth" Click="Depth_Click" />
+                <Button Content=" Skeleton" Click="Skeleton_Click" />
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
